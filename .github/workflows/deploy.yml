@@ -1,0 +1,23 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match the branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # You can choose the runner OS that fits your needs
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Add other steps here, such as building your application, etc.
+
+    - name: Generate CD.service
+      run: |
+        # Replace the following command with the actual command to run your script
+        ./generate_CD_service.sh
+
+    # Add other steps here, such as deploying your application, etc.
