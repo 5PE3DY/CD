@@ -24,9 +24,9 @@ jobs:
       - name: SSH login on droplet and update CD app 
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          port: ${{ secrets.PORT }}
-          username: ${{ secrets.USERNAME }}
+          host: ${{ secrets.HOST_SECRET }}
+          port: ${{ secrets.PORT_SECRET }}
+          username: ${{ secrets.USERNAME_SECRET }}
           key: ${{ secrets.CD_SECRET }}
           script: |
               cd /home/CD
