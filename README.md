@@ -5,7 +5,7 @@ Hierbij mijn verslag over het project CD. Deze hb ik gemaakt met behulp van een 
 ## Github actions
 In Github actions heb ik een main.yml bestand gemaakt.
 in dit bestand staan de acties die uitgevoerd worden. In dit geval zijn dat 2 acties. Test en Deploy acties.
-Pytest doet de eerste fase en wanneer de test compleet is kan mijn project door eerst in te loggen in mijn virtuele server uiteinelijk aangeroepen worden (Deploy fase)
+Pytest doet de eerste fase en wanneer de test compleet is kan mijn project door eerst in te loggen in mijn virtuele server uiteinelijk aangeroepen worden (Deploy fase).
 ## SSH keys
 Om in te loggen op je server maak je gebruik van een speciale sleutel. Deze sleutel heb ik gegeneerd in github. Ik heb een private en een public key gegenereerd. Mijn public-key staat in mijn map .ssh directory in de map: authorized_keys.
 En mijn private-key staat onder secrets in Github. Ik had wel moeite om te begrijpen hoe het allemaal werkte en hoe ik uiteindelijk alles moest genereren en opslaan.
